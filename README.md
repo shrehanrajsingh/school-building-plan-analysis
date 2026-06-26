@@ -9,9 +9,8 @@ and sustainability features, and 3D visualization of the BGA School from
 Nursery through Class XII.
 
 This repository contains the original design deliverables (CAD drawings,
-Blender models, presentation deck, walkthrough videos) and a reproducible
-HTML-to-PDF report pipeline that produces the final architectural design
-report.
+Blender models, presentation deck, walkthrough videos) and the final
+architectural design report (Report.pdf).
 
 
 Table of Contents
@@ -30,11 +29,7 @@ Table of Contents
   * 3D Visualization and Modeling
   * Directory Structure
   * Source Deliverables
-  * Report Generation
-  * Prerequisites
-  * Installation
-  * Usage
-  * Output Files
+  * Report
   * Design Notes and Constraints
   * Key Dimensions Reference
   * Copying
@@ -339,58 +334,41 @@ ces-project/
 |-- Report.pdf
 |-- .gitignore
 |
-|-- CES Project - Group 3/
-|   |-- School Building Project.pptx
-|   |-- schoolplanbga.pdf
-|   |
-|   |-- ground/
-|   |   |-- groundfloorzoombg.pdf
-|   |   |-- ground-1.png
-|   |   |-- ground-2.png
-|   |   |-- ground-3.png
-|   |   |-- ground-4.png
-|   |   |-- ground-top.png
-|   |   `-- groundfloorglimpse.mp4
-|   |
-|   |-- firstfloor/
-|   |   |-- firstfloorbg.pdf
-|   |   |-- first-1.png
-|   |   |-- first-2.png
-|   |   |-- first-top.png
-|   |   `-- floorplan_3d.blend
-|   |
-|   |-- secondfloor/
-|   |   |-- secondfloorbg.pdf
-|   |   |-- Screenshot *.png
-|   |   `-- secondfloorglimpse.mp4
-|   |
-|   `-- full/
-|       |-- schoolplanoverview.pdf
-|       `-- Screenshot *.png
-|
-`-- report/
-    |-- index.html
-    |-- styles.css
-    |-- generate-report.py
-    |-- optimize_assets.py
-    |-- BGA-School-Report.pdf
-    `-- assets/
-        |-- campus-overview.jpg
-        |-- campus-site-p1.jpg ... campus-site-p5.jpg
-        |-- ground-floor.jpg
-        |-- first-floor.jpg
-        |-- second-floor.jpg
-        |-- ground-*.jpg
-        |-- first-*.jpg
-        |-- second-*.jpg
-        `-- full-*.jpg
+`-- CES Project - Group 3/
+    |-- School Building Project.pptx
+    |-- schoolplanbga.pdf
+    |
+    |-- ground/
+    |   |-- groundfloorzoombg.pdf
+    |   |-- ground-1.png
+    |   |-- ground-2.png
+    |   |-- ground-3.png
+    |   |-- ground-4.png
+    |   |-- ground-top.png
+    |   `-- groundfloorglimpse.mp4
+    |
+    |-- firstfloor/
+    |   |-- firstfloorbg.pdf
+    |   |-- first-1.png
+    |   |-- first-2.png
+    |   |-- first-top.png
+    |   `-- floorplan_3d.blend
+    |
+    |-- secondfloor/
+    |   |-- secondfloorbg.pdf
+    |   |-- Screenshot *.png
+    |   `-- secondfloorglimpse.mp4
+    |
+    `-- full/
+        |-- schoolplanoverview.pdf
+        `-- Screenshot *.png
 ```
 
 File roles:
 
 ```
 README.md                 Project documentation (this file)
-Report.pdf                Convenience copy of the final report
+Report.pdf                Final architectural design report (21 pages)
 .gitignore                Git ignore rules
 
 CES Project - Group 3/    Original design deliverables (authoritative sources)
@@ -401,14 +379,6 @@ CES Project - Group 3/    Original design deliverables (authoritative sources)
   firstfloor/             First floor plans, Blender renders, source .blend model
   secondfloor/            Second floor plans, Blender renders, walkthrough video
   full/                   Campus overview plan and massing screenshots
-
-report/                   HTML-to-PDF report generation pipeline
-  index.html              Full report markup (21 pages)
-  styles.css              Print stylesheet (A4)
-  generate-report.py      PDF build script (Playwright + PyMuPDF)
-  optimize_assets.py      Image resize and JPEG compression
-  BGA-School-Report.pdf   Generated report output
-  assets/                 Optimized JPEG images used by index.html
 ```
 
 
@@ -416,8 +386,8 @@ Source Deliverables
 -------------------
 
 The following files in "CES Project - Group 3/" are the authoritative design
-sources.  The report pipeline reads optimized copies of images derived from
-these files; it does not modify the originals.
+sources.  The final report (Report.pdf) is derived from these files; the
+originals are not modified.
 
   File                              Type        Role
   --------------------------------  ----------  ---------------------------
@@ -434,15 +404,12 @@ these files; it does not modify the originals.
   full/*.png, secondfloor/*.png     PNG         Massing and floor renders
 
 
-Report Generation
------------------
+Report
+------
 
-The final architectural design report is produced by an HTML-to-PDF pipeline.
-The report source is written in semantic HTML with a dedicated print
-stylesheet.  Chromium (via Playwright) renders each page to PDF with full
-background support (gradients, tab navigation, callout boxes).  A lightweight
-post-processing step using PyMuPDF applies deflate compression without
-modifying CSS gradient pattern resources.
+The final architectural design report is provided as Report.pdf at the
+repository root.  It is an A4 document of approximately 1.5 to 2.0 MB,
+compatible with Adobe Acrobat, browser PDF viewers, and Preview.
 
 Report Contents (21 pages)
 
@@ -466,89 +433,6 @@ diagrams), dimension tables, room area comparisons, and section tab navigation
 on every interior page.
 
 
-Prerequisites
--------------
-
-  Python 3.9 or later
-  pip (Python package manager)
-
-Python packages (installed automatically on first run if missing):
-
-  playwright       Headless Chromium for PDF rendering
-  pymupdf          PDF post-processing (deflate compression)
-  pillow           Image optimization (resize, JPEG conversion)
-
-System requirement:
-
-  Chromium browser binaries for Playwright (installed via
-  "python3 -m playwright install chromium" on first run).
-
-
-Installation
-------------
-
-1. Clone or copy this repository to your local machine.
-
-2. Install Python dependencies:
-
-     pip install playwright pymupdf pillow
-
-3. Install Chromium for Playwright (required once):
-
-     python3 -m playwright install chromium
-
-4. Populate report assets from the source deliverables.  If the assets/
-   directory is empty, copy and rasterize images from "CES Project -
-   Group 3/" into report/assets/, or run the report generator which
-   optimizes whatever images are already present.
-
-
-Usage
------
-
-Generate the full PDF report:
-
-     cd report
-     python3 generate-report.py
-
-This command performs the following steps in order:
-
-  1. optimize_assets.py  Resizes images to A4-appropriate widths (1400 px
-     for full-width figures, 900 px for half-width) and converts them to
-     progressive JPEG.
-
-  2. Playwright/Chromium  Renders report/index.html to a temporary PDF with
-     print backgrounds enabled and zero margins on A4 pages.
-
-  3. PyMuPDF compression  Applies garbage collection and deflate
-     compression.  Does not use rewrite_images, which corrupts CSS gradient
-     pattern resources and causes rendering errors in Adobe Acrobat.
-
-  4. Output  Writes report/BGA-School-Report.pdf and copies it to the
-     repository root as Report.pdf.
-
-Optimize assets only (without generating the PDF):
-
-     cd report
-     python3 optimize_assets.py
-
-Preview the report in a browser before generating PDF:
-
-     Open report/index.html in any modern web browser.
-
-
-Output Files
-------------
-
-  report/BGA-School-Report.pdf   Primary generated report (~1.7 MB)
-  Report.pdf                     Root-level convenience copy
-
-Expected output characteristics:
-  21 pages, A4 format
-  Approximately 1.5 to 2.0 MB file size
-  Compatible with Adobe Acrobat, browser PDF viewers, and Preview
-
-
 Design Notes and Constraints
 ----------------------------
 
@@ -567,10 +451,6 @@ Design Notes and Constraints
 
   * Three elevators and ramp access at the main entrance provide disabled
     accessibility throughout the G+2 structure.
-
-  * The report stylesheet uses a fixed page height of 297 mm with
-    overflow: hidden to keep section tab navigation anchored at the bottom
-    of each page during PDF rendering.
 
 
 Key Dimensions Reference
@@ -609,6 +489,5 @@ list of authors are preserved on all copies.
 See Also
 --------
 
-  report/index.html              HTML source for the design report
-  report/styles.css              Print stylesheet reference
+  Report.pdf                     Final architectural design report
   School Building Project.pptx   Original presentation with slide narratives
