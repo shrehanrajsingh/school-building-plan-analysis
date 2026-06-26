@@ -1,11 +1,11 @@
-BGA School Building Project
+School Building Project
 ===========================
 
-BGA School Building Project is the architectural design documentation for a
+School Building Project is the architectural design documentation for a
 G+2 educational campus developed as part of the Civil Engineering Society
 (CES) coursework by Group 3.  The project covers campus master planning,
 floor-by-floor spatial design, structural and material specifications, safety
-and sustainability features, and 3D visualization of the BGA School from
+and sustainability features, and 3D visualization of the School from
 Nursery through Class XII.
 
 This repository contains the original design deliverables (CAD drawings,
@@ -38,7 +38,7 @@ Table of Contents
 Overview
 --------
 
-The BGA School Building Project is a meticulously planned G+2 educational
+The School Building Project is a meticulously planned G+2 educational
 campus designed to support academic excellence, extracurricular development,
 and safe, efficient campus operations.  The building uses a doubly loaded
 corridor typology organized around a central courtyard that brings natural
