@@ -333,34 +333,83 @@ Source Model
 Directory Structure
 -------------------
 
+```
 ces-project/
-  README                          This file
-  Report.pdf                      Convenience copy of the final report
-  CES Project - Group 3/          Original design deliverables
-    School Building Project.pptx  Presentation deck with narrative text
-    schoolplanbga.pdf             Master plan and front elevation (5 pages)
-    ground/                       Ground floor assets
-      groundfloorzoombg.pdf       Annotated ground floor plan
-      ground-*.png                Blender renders
-      groundfloorglimpse.mp4      Walkthrough video
-    firstfloor/                   First floor assets
-      firstfloorbg.pdf            Annotated first floor plan
-      first-*.png                 Blender renders
-      floorplan_3d.blend          Blender source model
-    secondfloor/                  Second floor assets
-      secondfloorbg.pdf           Annotated second floor plan
-      Screenshot *.png            Blender renders
-      secondfloorglimpse.mp4      Walkthrough video
-    full/                         Campus overview assets
-      schoolplanoverview.pdf      Bird's-eye campus plan
-      Screenshot *.png            Massing and landscaping renders
-  report/                         Report generation pipeline
-    index.html                    Full report markup (21 pages)
-    styles.css                    Print stylesheet (A4, Pathway-inspired)
-    generate-report.py            PDF build script
-    optimize_assets.py            Image compression and resizing
-    assets/                       Optimized JPEG images for the report
-    BGA-School-Report.pdf         Generated report output
+|-- README.md
+|-- Report.pdf
+|-- .gitignore
+|
+|-- CES Project - Group 3/
+|   |-- School Building Project.pptx
+|   |-- schoolplanbga.pdf
+|   |
+|   |-- ground/
+|   |   |-- groundfloorzoombg.pdf
+|   |   |-- ground-1.png
+|   |   |-- ground-2.png
+|   |   |-- ground-3.png
+|   |   |-- ground-4.png
+|   |   |-- ground-top.png
+|   |   `-- groundfloorglimpse.mp4
+|   |
+|   |-- firstfloor/
+|   |   |-- firstfloorbg.pdf
+|   |   |-- first-1.png
+|   |   |-- first-2.png
+|   |   |-- first-top.png
+|   |   `-- floorplan_3d.blend
+|   |
+|   |-- secondfloor/
+|   |   |-- secondfloorbg.pdf
+|   |   |-- Screenshot *.png
+|   |   `-- secondfloorglimpse.mp4
+|   |
+|   `-- full/
+|       |-- schoolplanoverview.pdf
+|       `-- Screenshot *.png
+|
+`-- report/
+    |-- index.html
+    |-- styles.css
+    |-- generate-report.py
+    |-- optimize_assets.py
+    |-- BGA-School-Report.pdf
+    `-- assets/
+        |-- campus-overview.jpg
+        |-- campus-site-p1.jpg ... campus-site-p5.jpg
+        |-- ground-floor.jpg
+        |-- first-floor.jpg
+        |-- second-floor.jpg
+        |-- ground-*.jpg
+        |-- first-*.jpg
+        |-- second-*.jpg
+        `-- full-*.jpg
+```
+
+File roles:
+
+```
+README.md                 Project documentation (this file)
+Report.pdf                Convenience copy of the final report
+.gitignore                Git ignore rules
+
+CES Project - Group 3/    Original design deliverables (authoritative sources)
+  schoolplanbga.pdf       Master plan and front elevation (5 pages)
+  School Building Project.pptx
+                          Presentation deck with narrative text and dimensions
+  ground/                 Ground floor plans, Blender renders, walkthrough video
+  firstfloor/             First floor plans, Blender renders, source .blend model
+  secondfloor/            Second floor plans, Blender renders, walkthrough video
+  full/                   Campus overview plan and massing screenshots
+
+report/                   HTML-to-PDF report generation pipeline
+  index.html              Full report markup (21 pages)
+  styles.css              Print stylesheet (A4)
+  generate-report.py      PDF build script (Playwright + PyMuPDF)
+  optimize_assets.py      Image resize and JPEG compression
+  BGA-School-Report.pdf   Generated report output
+  assets/                 Optimized JPEG images used by index.html
+```
 
 
 Source Deliverables
