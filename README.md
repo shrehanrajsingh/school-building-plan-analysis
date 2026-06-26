@@ -145,13 +145,13 @@ level changes accommodating site topography.
 
 | Space                     | Dimensions     | Area      | Function             |
 | ------------------------- | -------------- | --------- | -------------------- |
-| Classrooms (Nursery-VIII) | 7 m x 7 m      | 49 m2 ea  | Primary and middle   |
-| Principal's Room          | 5 m x 10.25 m  | 51 m2     | Head of institution  |
-| Office                    | 7.5 m x 7 m    | 53 m2     | Administrative staff |
-| Parents' Waiting          | 4 m x 7 m      | 28 m2     | Visitor reception    |
-| Sick Room                 | 5 m x 7 m      | 35 m2     | First aid            |
+| Classrooms (Nursery-VIII) | 7 m x 7 m      | 49 m² ea  | Primary and middle   |
+| Principal's Room          | 5 m x 10.25 m  | 51 m²     | Head of institution  |
+| Office                    | 7.5 m x 7 m    | 53 m²     | Administrative staff |
+| Parents' Waiting          | 4 m x 7 m      | 28 m²     | Visitor reception    |
+| Sick Room                 | 5 m x 7 m      | 35 m²     | First aid            |
 | Store                     | 10.25 m length | -         | Equipment storage    |
-| Courtyard + Badminton     | 21.5 m x 11 m  | 237 m2    | At +300 mm level     |
+| Courtyard + Badminton     | 21.5 m x 11 m  | 237 m²    | At +300 mm level     |
 | Sports Kits Room          | -              | -         | Athletic equipment   |
 
 ### Vertical Circulation
@@ -174,11 +174,11 @@ each wing.
 
 | Space                           | Dimensions   | Area     | Notes           |
 | ------------------------------- | ------------ | -------- | --------------- |
-| Class IX (Sec A, B, C)          | 7 m x 7 m    | 49 m2 ea | Three sections  |
-| Class X (Sec A, B, C)           | 7 m x 7 m    | 49 m2 ea | Three sections  |
-| Class XI Science/Commerce/Arts  | 7 m x 7 m    | 49 m2 ea | Stream-wise     |
-| Class XII Science/Commerce/Arts | 7 m x 7 m    | 49 m2 ea | Stream-wise     |
-| Teachers' Lounge                | 17.5 m x 7 m | 123 m2   | Faculty space   |
+| Class IX (Sec A, B, C)          | 7 m x 7 m    | 49 m² ea | Three sections  |
+| Class X (Sec A, B, C)           | 7 m x 7 m    | 49 m² ea | Three sections  |
+| Class XI Science/Commerce/Arts  | 7 m x 7 m    | 49 m² ea | Stream-wise     |
+| Class XII Science/Commerce/Arts | 7 m x 7 m    | 49 m² ea | Stream-wise     |
+| Teachers' Lounge                | 17.5 m x 7 m | 123 m²   | Faculty space   |
 | HIS / HER Toilets               | Per wing     | -        | Air-lock entries|
 | Drinking Water                  | Per wing     | -        | Two stations    |
 
@@ -197,15 +197,15 @@ spaces away from younger students on lower floors.
 
 | Space             | Dimensions        | Area   | Function                |
 | ----------------- | ----------------- | ------ | ----------------------- |
-| Physics Lab       | 11 m x 7 m        | 77 m2  | Physics experiments     |
-| Chemistry Lab     | 11 m x 7 m        | 77 m2  | Chemical experiments    |
-| Biology Lab       | 11 m x 7 m        | 77 m2  | Biological specimens    |
-| Computer Lab      | 11 m x 7 m        | 77 m2  | Computing systems       |
-| Library + Reading | 12 m x 21.5 m     | 258 m2 | Largest single space    |
-| Music Room        | 10.5 m x 7 m      | 74 m2  | Performing arts         |
-| Seminar Room      | 7 m x 11 m        | 77 m2  | Events and presentations|
-| Conference Room   | 15.05 m x 14.25 m | 214 m2 | Large meetings          |
-| Terrace           | 6.45 m x 7 m      | 45 m2  | Open-air breakout       |
+| Physics Lab       | 11 m x 7 m        | 77 m²  | Physics experiments     |
+| Chemistry Lab     | 11 m x 7 m        | 77 m²  | Chemical experiments    |
+| Biology Lab       | 11 m x 7 m        | 77 m²  | Biological specimens    |
+| Computer Lab      | 11 m x 7 m        | 77 m²  | Computing systems       |
+| Library + Reading | 12 m x 21.5 m     | 258 m² | Largest single space    |
+| Music Room        | 10.5 m x 7 m      | 74 m²  | Performing arts         |
+| Seminar Room      | 7 m x 11 m        | 77 m²  | Events and presentations|
+| Conference Room   | 15.05 m x 14.25 m | 214 m² | Large meetings          |
+| Terrace           | 6.45 m x 7 m      | 45 m²  | Open-air breakout       |
 
 
 Front Elevation and Massing
@@ -453,8 +453,8 @@ Design Notes and Constraints
   * The building uses doubly loaded corridors with a central courtyard at
     +300 mm elevation hosting an integrated badminton court.
   * Floor-to-floor height is 3600 mm across all three occupied levels.
-  * Classroom standard size is 7 m x 7 m (49 m2) throughout all floors.
-  * The library at 258 m2 is the largest single programmed space on campus.
+  * Classroom standard size is 7 m x 7 m (49 m²) throughout all floors.
+  * The library at 258 m² is the largest single programmed space on campus.
   * Vertical zoning separates primary students (ground), secondary students
     (first), and specialized facilities (second) to minimize overlap between
     lab activities and younger student populations.
@@ -469,16 +469,16 @@ Largest programmed spaces by floor area:
 
 | Space              | Dimensions        | Area       |
 | ------------------ | ----------------- | ---------- |
-| Library            | 12 m x 21.5 m     | 258 m2     |
-| Courtyard          | 21.5 m x 11 m     | 237 m2     |
-| Conference Room    | 15.05 m x 14.25 m | 214 m2     |
-| Teachers' Lounge   | 17.5 m x 7 m      | 123 m2     |
-| Science Labs       | 11 m x 7 m        | 77 m2 each |
-| Computer Lab       | 11 m x 7 m        | 77 m2      |
-| Music Room         | 10.5 m x 7 m      | 74 m2      |
-| Standard Classroom | 7 m x 7 m         | 49 m2      |
-| Principal's Office | 5 m x 10.25 m     | 51 m2      |
-| Terrace            | 6.45 m x 7 m      | 45 m2      |
+| Library            | 12 m x 21.5 m     | 258 m²     |
+| Courtyard          | 21.5 m x 11 m     | 237 m²     |
+| Conference Room    | 15.05 m x 14.25 m | 214 m²     |
+| Teachers' Lounge   | 17.5 m x 7 m      | 123 m²     |
+| Science Labs       | 11 m x 7 m        | 77 m² each |
+| Computer Lab       | 11 m x 7 m        | 77 m²      |
+| Music Room         | 10.5 m x 7 m      | 74 m²      |
+| Standard Classroom | 7 m x 7 m         | 49 m²      |
+| Principal's Office | 5 m x 10.25 m     | 51 m²      |
+| Terrace            | 6.45 m x 7 m      | 45 m²      |
 
 
 Copying
